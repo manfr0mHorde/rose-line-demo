@@ -27,7 +27,7 @@ const validDate=s=>/^\d{4}-\d{2}-\d{2}$/.test(s)&&!Number.isNaN(new Date(s+'T12:
 function load(){try{const stored=JSON.parse(localStorage.getItem(STORE_KEY));if(stored&&Array.isArray(stored.products)&&Array.isArray(stored.cart)&&Array.isArray(stored.requests))return {...deepCopy(DEFAULT),...stored,settings:{...deepCopy(DEFAULT.settings),...stored.settings}}}catch(e){}return deepCopy(DEFAULT)}
 let data=load(),view='buyer',filter='all',search='',tab='overview',editing=null,temporaryImg='';
 function save(){try{localStorage.setItem(STORE_KEY,JSON.stringify(data));return true}catch(e){alert('Данные не сохранились. Возможно, в браузере закончилось место. Уменьшите размер фото или экспортируйте копию.');return false}}
-function imgSrc(s){return (/^\.\/assets\/[a-z0-9-]+\.svg$/i.test(s)||/^data:image\/(?:png|jpeg|webp);base64,[a-z0-9+/=]+$/i.test(s))?s:flowerSVG(0)}
+function imgSrc(s){return (/^\.\/assets\/[a-z0-9-]+\.svg$/i.test(s)||/^data:image\/(?:png|jpeg|webp);base64,[a-z0-9+/=]+$/i.test(s)||/^data:image\/svg\+xml;charset=utf-8,%3Csvg/i.test(s))?s:flowerSVG(0)}
 function product(id){return data.products.find(p=>p.id===id)}
 function cartRows(){return data.cart.map(c=>({p:product(c.id),qty:c.qty})).filter(x=>x.p)}
 function cartSum(){return cartRows().reduce((a,x)=>a+x.qty*x.p.price,0)}
