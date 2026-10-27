@@ -110,3 +110,40 @@ body{background:#fff8f3}
 .bespoke{background:#f9e5e6}
 .offer-note{font-size:11px;color:#a17a83;padding-top:0;padding-bottom:26px}
 @media(max-width:760px){.hero-right{background:#852f49}.hero-arch{border-radius:10px 120px 10px 120px}.product-photo{border-radius:12px 12px 68px 12px}}
+
+/* Rose Line 2026 distinctive editorial design */
+:root{--cream:#fff8f4;--paper:#fffaf7;--pink:#f8e7e5;--petal:#e5b5ba;--rose:#b74c65;--wine:#721e3d;--deep:#40182d;--muted:#967b82;--line:#ecd9dc;--shadow:0 24px 62px #63163218}
+body{background:#fff9f5;color:#451d2e}
+.demo-note{background:#661b38}
+.site-header{background:#fff9f6eb;border-color:#f0dade}
+.brand-symbol{overflow:hidden;border:2px solid #e9cfc8;background:#f9e9df}
+.brand-symbol img{height:100%;width:100%;object-fit:cover}
+.brand-copy strong{color:#721e3d;font-size:27px}
+.brand-copy small{color:#a87481}
+.primary-nav a:hover{color:#a23256}
+.hero{grid-template-columns:49% 51%;min-height:650px;margin-top:14px}
+.hero-left{background:radial-gradient(circle at 90% 5%,#fce9dd,transparent 45%),linear-gradient(145deg,#fff5ee,#f8e2e4);padding-top:108px}
+.hero-left:after{content:'R';font-style:italic;opacity:.45;right:-45px}
+.hero h1{color:#5b1837;font-size:clamp(44px,5vw,76px);letter-spacing:-2px;line-height:1.06}
+.hero h1 em{color:#ad4564}
+.hero-left p{color:#84616d;font-size:14px}
+.hero-right{background:linear-gradient(155deg,#8b324d,#3e132d);min-height:650px}
+.hero-arch{height:87%;width:83%;border-radius:300px 300px 8px 8px;border:9px solid #f7dfd9}
+.hero-stamp{background:#fcf1e7;color:#803655;border-radius:6px;transform:rotate(-7deg)}
+.hero-vertical{color:#fff9}
+.eyebrow{color:#ac687b}
+.btn-primary,.cart-btn{background:#751e3f;color:white}
+.btn-primary:hover{background:#4f1530}
+.btn-outline{color:#7b2344;border-color:#d3a6b5}
+.brand-banner{background:#6d203e;color:#fff1ef}
+.product-grid{column-gap:18px;row-gap:42px}
+.product-photo{border-radius:180px 180px 10px 10px;background:#f2e2e0;aspect-ratio:4/5}
+.product-tag{background:#fff9f1}
+.product-copy h3{color:#54182e}
+.product-price{color:#9b3154}
+.bespoke,.empty{background:#f8ece9}
+.how{background:#651e3d}
+.how h2 em{color:#f7c4cf}
+.bottom-cta{background:#fff4f1}
+footer{background:#f8ede9}
+@media(max-width:760px){.hero{min-height:0}.hero-right{height:380px;min-height:380px}.hero-left{padding:42px 26px 55px}.hero h1{font-size:clamp(37px,10vw,56px)}.hero-arch{width:78%;height:97%}.product-photo{border-radius:90px 90px 7px 7px}}
