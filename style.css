@@ -235,14 +235,10 @@ a,button{-webkit-tap-highlight-color:transparent}
 .rose-hero-photo::before{content:"ROSE LINE  /  РОЗЫ ДЛЯ ВАШИХ МОМЕНТОВ";position:absolute;inset:10%;display:flex;align-items:center;justify-content:center;text-align:center;line-height:2;letter-spacing:3px;font-size:12px;color:#fff4ec;z-index:0}
 .rose-hero-photo img{position:relative;z-index:1;width:100%;height:100%;object-fit:cover;object-position:center}
 
-/* Offline-safe photo collage: 4 authentic screenshot photos in one repository asset */
+/* Individual premium photographs: no collage cropping */
 .product-photo,.detail-photo-wrap,.rose-hero-photo{position:relative;overflow:hidden}
-.product-photo img[data-bouquet],.detail-photo-wrap img[data-bouquet],.rose-hero-photo img[data-bouquet]{position:absolute!important;display:block!important;top:0;left:0;max-width:none!important;width:200%!important;height:200%!important;object-fit:fill!important;transform:none!important;transition:none!important;image-rendering:auto}
-.product-photo img[data-bouquet="rl1"],.detail-photo-wrap img[data-bouquet="rl1"]{left:-100%!important}
-.product-photo img[data-bouquet="rl2"],.detail-photo-wrap img[data-bouquet="rl2"]{top:-100%!important}
-.product-photo img[data-bouquet="rl3"],.detail-photo-wrap img[data-bouquet="rl3"]{top:-100%!important;left:-100%!important}
-.detail-photo-wrap{height:285px;border-radius:8px;background:#f3e5e3;margin-bottom:12px}
-.detail-photo-wrap .detail-image{border-radius:0!important}
-.product-photo:hover img[data-bouquet]{transform:none!important}
-.rose-hero-photo img[data-bouquet="rl0"]{object-fit:fill!important}
-@media(max-width:760px){.detail-photo-wrap{height:300px}}
+.product-photo img,.detail-photo-wrap img,.rose-hero-photo img{width:100%!important;height:100%!important;max-width:100%!important;object-fit:cover!important;object-position:center!important;position:relative!important;inset:auto!important;display:block!important;transform:none!important}
+.detail-photo-wrap{height:330px;border-radius:12px;background:#f8e8e6;margin-bottom:12px}
+.detail-photo-wrap .detail-image{border-radius:12px!important}
+.product-photo:hover img{transform:scale(1.025)!important;transition:transform .35s ease!important}
+@media(max-width:760px){.detail-photo-wrap{height:300px}.rose-hero-photo img{object-position:center 47%!important}}
